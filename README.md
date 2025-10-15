@@ -1,24 +1,16 @@
 # c-Fos Cell Counter for ImageJ
 
-**Repository Name:** `cfos-cell-counter-imagej`
-
-**Description:** ImageJ macro for automated c-Fos positive cell counting in fluorescence microscopy images with flexible channel configuration, optional DAPI colocalization, and multi-ROI support.
-
----
-
 ## Overview
 
-This ImageJ macro provides semi-automated analysis of c-Fos expression in fluorescence microscopy images. It's designed for neuroscience research to quantify neuronal activation by counting c-Fos-positive cells, with optional DAPI colocalization to ensure nuclear localization.
+This ImageJ macro provides semi-automated analysis of c-Fos expression in fluorescence microscopy images. It's designed to quantify neuronal activation by counting c-Fos-positive cells, with optional DAPI colocalization to ensure nuclear localization.
 
 ### Key Features
 
-- **Flexible Channel Configuration**: Choose any channel (red, green, or blue) for c-Fos and DAPI
+- **Channel Configuration**: Choose any channel (red, green, or blue) for c-Fos and DAPI
 - **Optional DAPI Analysis**: Enable/disable DAPI colocalization checking
 - **Multi-ROI Support**: Analyze multiple regions of interest in a single image
 - **Batch Processing**: Process entire directories of images automatically
-- **CLAHE Enhancement**: Contrast-limited adaptive histogram equalization for improved detection
 - **Interactive Thresholding**: Manual adjustment or automatic thresholding options
-- **Comprehensive Output**: CSV results, overlay images, and ROI position references
 - **ROI Configuration**: Import/export ROI settings for consistency across analyses
 
 ---
@@ -42,7 +34,7 @@ Download and install [Fiji](https://fiji.sc/) (ImageJ distribution with useful p
 
 ### 2. Install CLAHE Plugin
 1. Download the CLAHE plugin from: https://imagej.net/ij/plugins/clahe/index.html
-2. Copy `CLAHE_.jar` to the `ImageJ/plugins` folder
+2. Drag and drop `CLAHE_.class` onto the "ImageJ" window.
 3. Restart ImageJ/Fiji
 
 ### 3. Install the Macro
@@ -165,8 +157,8 @@ Save and reuse ROI configurations:
 {
   "roiCount": 2,
   "roiNames": [
-    "DG",
-    "CA1"
+    "DRN",
+    "PAG"
   ]
 }
 ```
@@ -176,66 +168,15 @@ The macro automatically saves your settings to `cfos_config.json` in the working
 
 ---
 
-## Tips for Best Results
-
-1. **Optimize imaging**: Ensure good signal-to-noise ratio in your images
-2. **Test parameters**: Start with a few test images to optimize detection parameters
-3. **Use manual threshold mode**: For heterogeneous samples, manual adjustment gives better control
-4. **ROI consistency**: Use Import/Export ROI settings for consistent analysis across samples
-5. **Quality check**: Always review overlay images to verify detection accuracy
-6. **Batch processing**: Use fully automatic mode only after validating parameters
-
----
-
-## Troubleshooting
-
-### No cells detected
-- Check that you've selected the correct channel for c-Fos
-- Adjust threshold settings (try lower threshold)
-- Verify size and circularity parameters match your cell morphology
-
-### Too many false positives
-- Increase minimum overlap with DAPI (if using DAPI)
-- Adjust size filters to exclude artifacts
-- Increase circularity threshold
-
-### CLAHE plugin not found
-- Verify CLAHE_.jar is in the ImageJ/plugins folder
-- Restart ImageJ/Fiji after installing the plugin
-
-### File path too long errors
-- Move images to a directory with a shorter path
-- Shorten ROI names
-
----
-
 ## Citation
 
 If you use this macro in your research, please cite it appropriately and consider citing:
 
-- ImageJ: Schneider, C.A., Rasband, W.S., Eliceiri, K.W. "NIH Image to ImageJ: 25 years of image analysis". Nature Methods 9, 671-675, 2012.
-- CLAHE: https://imagej.net/ij/plugins/clahe/index.html
+- [ImageJ](https://www.nature.com/articles/nmeth.2089): Schneider et al. (2012)
+- [Fiji](https://www.nature.com/articles/nmeth.2019): Schindelin et al. (2012)
 
 ---
 
 ## License
 
-[Specify your license here - e.g., MIT, GPL-3.0, etc.]
-
----
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit issues or pull requests.
-
----
-
-## Contact
-
-[Add your contact information or link to issues page]
-
----
-
-## Acknowledgments
-
-This macro was developed for neuroscience research applications requiring quantification of c-Fos expression as a marker of neuronal activity.
+MIT License
