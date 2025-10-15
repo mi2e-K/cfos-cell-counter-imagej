@@ -30,7 +30,7 @@ This ImageJ macro provides semi-automated analysis of c-Fos expression in fluore
 ## Installation
 
 ### 1. Install ImageJ/Fiji
-Download and install [Fiji](https://fiji.sc/) or [ImageJ](https://imagej.net/ij/download.html).
+Download [Fiji](https://fiji.sc/) or [ImageJ](https://imagej.net/ij/download.html).
 
 ### 2. Install CLAHE Plugin
 1. Download the CLAHE plugin from: https://imagej.net/ij/plugins/clahe/index.html
