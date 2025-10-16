@@ -168,15 +168,15 @@ The macro automatically saves your settings to `cfos_config.json` in the working
 
 ---
 
+## License
+
+MIT License
+
+---
+
 ## Citation
 
 If you use this macro in your research, please cite it appropriately and consider citing:
 
 - [ImageJ](https://www.nature.com/articles/nmeth.2089): Schneider et al. (2012)
 - [Fiji](https://www.nature.com/articles/nmeth.2019): Schindelin et al. (2012)
-
----
-
-## License
-
-MIT License
