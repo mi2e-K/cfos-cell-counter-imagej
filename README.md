@@ -18,7 +18,7 @@ This ImageJ macro provides semi-automated analysis of c-Fos expression in fluore
 ## Requirements
 
 ### Software
-- **Fiji**
+- **Fiji** (recommend)
 - **CLAHE plugin** for ImageJ/Fiji
 
 ### Input Files
@@ -34,12 +34,12 @@ Download [Fiji](https://fiji.sc/).
 
 ### 2. Install CLAHE Plugin
 1. Download the CLAHE plugin from: https://imagej.net/ij/plugins/clahe/index.html
-2. Drag and drop `CLAHE_.class` onto the "ImageJ" window.
-3. Restart ImageJ/Fiji
+2. Drag and drop `CLAHE_.class` onto the "Fiji" window.
+3. Restart Fiji
 
 ### 3. Install the Macro
 1. Download `cFosCounting_mk.ijm` from this repository
-2. In ImageJ/Fiji: **Plugins → Macros → Install...** and select the macro file
+2. In Fiji: **Plugins → Macros → Install...** and select the macro file
 3. Or run directly: **Plugins → Macros → Run...** and select the file
 
 ---
