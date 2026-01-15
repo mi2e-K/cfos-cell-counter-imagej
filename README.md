@@ -18,8 +18,8 @@ This ImageJ macro provides semi-automated analysis of c-Fos expression in fluore
 ## Requirements
 
 ### Software
-- **ImageJ** or **Fiji** (recommended)
-- **CLAHE plugin** for ImageJ
+- **Fiji**
+- **CLAHE plugin** for ImageJ/Fiji
 
 ### Input Files
 - 2D fluorescence microscopy images in **TIF format**
@@ -29,8 +29,8 @@ This ImageJ macro provides semi-automated analysis of c-Fos expression in fluore
 
 ## Installation
 
-### 1. Install ImageJ/Fiji
-Download [Fiji](https://fiji.sc/) or [ImageJ](https://imagej.net/ij/download.html).
+### 1. Install Fiji
+Download [Fiji](https://fiji.sc/).
 
 ### 2. Install CLAHE Plugin
 1. Download the CLAHE plugin from: https://imagej.net/ij/plugins/clahe/index.html
@@ -178,5 +178,4 @@ MIT License
 
 If you use this macro in your research, please cite it appropriately and consider citing:
 
-- [ImageJ](https://www.nature.com/articles/nmeth.2089): Schneider et al. (2012)
 - [Fiji](https://www.nature.com/articles/nmeth.2019): Schindelin et al. (2012)
